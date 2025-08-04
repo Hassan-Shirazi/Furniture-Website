@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherazi Furniture - Masterful Craftsmanship</title>
+
+    <!-- Google Fonts: Elegant typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP (GreenSock Animation Platform) and ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-inner">Sherazi Furniture</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Sherazi</a>
+        <ul class="nav-links">
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Gallery</a></li>
+            <li><a href="#process">Craft</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1>
+                    <span class="clip-parent"><span class="line">Timeless Design,</span></span>
+                    <span class="clip-parent"><span class="line">Crafted for Generations.</span></span>
+                </h1>
+                <p class="anim-item">Experience furniture that fuses masterful artistry with enduring functionality,
+                    creating spaces you'll love for a lifetime.</p>
+                <a href="#showcase" class="cta-button anim-item">Explore Our Collection</a>
+            </div>
+        </section>
+
+        <!-- Showcase Section -->
+        <section id="showcase">
+            <div class="container">
+                <h2 class="section-title">Curated for Comfort</h2>
+                <div class="showcase-grid">
+                    <div class="showcase-card">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80"
+                            alt="Elegant Armchair">
+                        <div class="card-content">
+                            <h3>The Sovereign Chair</h3>
+                            <p>A statement of comfort and class, upholstered in premium Belgian linen.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-card">
+                        <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Modern Floor Lamp">
+                        <div class="card-content">
+                            <h3>The Arc Lamp</h3>
+                            <p>Illuminate your space with a design that's both modern and minimalist.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-card">
+                        <img src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Oakwood Coffee Table">
+                        <div class="card-content">
+                            <h3>The Terra Table</h3>
+                            <p>Solid walnut construction meets organic design for a natural centerpiece.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title" style="text-align: left;">Our Philosophy</h2>
+                        <p>At Sherazi Furniture, we believe furniture is more than just an object. It's a part of your
+                            home's story, a companion in your daily life. That's why we dedicate ourselves to principles
+                            of sustainable sourcing, masterful craftsmanship, and enduring design.</p>
+                        <p>Every piece is conceived by our in-house designers and brought to life by artisans who share
+                            our passion for quality. We don't just sell furniture; we help you create a sanctuary.</p>
+                        <a href="#contact" class="cta-button">Consult a Designer</a>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <img src="https://poshish.pk/cdn/shop/files/IMG_5891_1800x1800.webp?v=1723288348"
+                            class="about-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Gallery Section -->
+        <section id="products">
+            <div class="container">
+                <h2 class="section-title">Signature Pieces</h2>
+                <div class="product-gallery">
+                    <div class="main-product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Product 1" id="mainProductImage" class="main-product-image">
+                    </div>
+                    <div class="product-thumbnails">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Thumbnail 1" class="thumbnail active">
+                        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Thumbnail 2" class="thumbnail">
+                        <img src="https://m.media-amazon.com/images/I/71KSVOGbNNL._AC_SL1500_.jpg" alt="Thumbnail 3"
+                            class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Thumbnail 4" class="thumbnail">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <div class="container">
+                <h2 class="section-title">Our Promise</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256c0 46.4-12.5 89.8-34.7 128c-5.4 9.4-16.7 12.8-26.1 7.3s-12.8-16.7-7.3-26.1c19.1-33.1 29.2-70.6 29.2-109.2C472 150 378 64 256 64zM135 241c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L377 185c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L184 289.9l-49-49z" />
+                            </svg>
+                        </div>
+                        <h3>Handcrafted Quality</h3>
+                        <p>Each piece is meticulously built by master artisans, ensuring unparalleled attention to
+                            detail and durability.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path fill="currentColor"
+                                    d="M363.3 32H20.7C9.3 32 0 41.3 0 52.7v406.7C0 470.7 9.3 480 20.7 480h342.7c11.3 0 20.7-9.3 20.7-20.7V52.7C384 41.3 374.7 32 363.3 32zM272 128c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40V96c0-22.1 17.9-40 40-40h16c22.1 0 40 17.9 40 40v32zm-64-16c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-32zM128 320H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16zm176 0h-48c-8.8 0-16-7.2-16-16s7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16zm-88-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h128c8.8 0 16 7.2 16 16s-7.2 16-16 16zm48-48c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h160c8.8 0 16 7.2 16 16zm0-48c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h160c8.8 0 16 7.2 16 16zM304 416h-48c-8.8 0-16-7.2-16-16s7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16z" />
+                            </svg>
+                        </div>
+                        <h3>Timeless Design</h3>
+                        <p>Our aesthetic blends classic principles with modern sensibilities, creating furniture that
+                            transcends trends.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M544 64c-17.7 0-32 14.3-32 32s14.3 32 32 32c0-17.7-14.3-32-32-32zM496 32c-53 0-96 43-96 96s43 96 96 96s96-43 96-96s-43-96-96-96zM48 128c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32zm0-80c53 0 96 43 96 96s-43 96-96 96S0 229 0 176s43-96 96-96zM312 416c-48.6 0-88 39.4-88 88s39.4 88 88 88s88-39.4 88-88s-39.4-88-88-88zm0 128c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40zM208 352c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16s16-7.2 16-16v-32c0-8.8-7.2-16-16-16z" />
+                            </svg>
+                        </div>
+                        <h3>Eco-Conscious</h3>
+                        <p>We use sustainably-sourced timber and environmentally friendly finishes, honoring our
+                            commitment to the planet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <div class="container">
+                <h2 class="section-title">Words of Acclaim</h2>
+                <div class="testimonial-carousel">
+                    <div class="testimonial-item active">
+                        <p class="testimonial-quote">"The quality from Sherazi is simply unparalleled. Our living room
+                            has been transformed into a work of art."</p>
+                        <p class="testimonial-author">- The Sterling Family</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <p class="testimonial-quote">"Their design consultation was insightful. They helped us find the
+                            perfect pieces that feel both modern and timeless."</p>
+                        <p class="testimonial-author">- James & Clara Knight</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <p class="testimonial-quote">"From ordering to white-glove delivery, the process was seamless.
+                            The furniture is even more stunning in person."</p>
+                        <p class="testimonial-author">- Dr. Aris Thorne</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process">
+            <div class="container">
+                <h2 class="section-title">The Art of Creation</h2>
+                <div class="process-timeline">
+                    <div class="timeline-line">
+                        <div class="timeline-line-progress"></div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Design & Conception</h3>
+                            <p>Every collection begins on the drawing board, where our designers merge client needs with
+                                our signature aesthetic to create functional art.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Sourcing Materials</h3>
+                            <p>We hand-select the finest, sustainably-harvested hardwoods and premium fabrics, ensuring
+                                every component meets our exacting standards.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Artisanal Crafting</h3>
+                            <p>Our master craftsmen employ age-old joinery techniques and meticulous care to shape,
+                                assemble, and build each piece by hand.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Finishing & Detail</h3>
+                            <p>The final stage involves careful sanding, application of eco-friendly finishes, and a
+                                rigorous quality inspection to guarantee perfection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter">
+            <div class="container">
+                <h2 class="section-title">Join The Inner Circle</h2>
+                <p>Receive exclusive access to new collections, design insights, and private events.</p>
+                <form class="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Begin a Conversation</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Inquiry" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="logo">Sherazi Furniture</a>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9 26.3 26.2 58 34.4 93.9 36.2 37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-62.9 0-58.5 45-104.5 101.1-104.5 56.1 0 88.5 35.4 88.5 83.8 0 68.5-35.4 148.5-82.5 148.5-42.3 0-66-33-66-73.5 0-26.1 18.3-44.4 41.1-44.4 12.6 0 21.6 9.3 21.6 21 0 15.9-5.7 34.2-5.7 34.2-2.1 10.2 6 16.5 15.6 12 18.6-8.7 31.5-54.6 31.5-85.8 0-42.9-24.9-72-69.3-72-52.5 0-94.2 34.8-94.2 99.3 0 35.4 13.5 73.5 36.6 92.4-3.3 15.9-10.2 42.3-13.5 54.6-4.2 15.9-1.2 33 6.9 46.2C218.4 496.2 384 372.5 384 204c0-114.9-93.1-207.5-207.5-207.5C101.4 6.5 0 74.9 0 185.6z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">© 2024 Sherazi Furniture. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
